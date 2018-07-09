@@ -1,0 +1,55 @@
+body, h1, h2, h3, dl, dd, p { margin:0;padding:0;}
+body {
+  font-size:12px;
+  line-height:1.4;
+}
+h1,
+h2,
+dt,
+dd {
+  font-size:12px;
+}
+.main {
+  width:900px;
+  margin:0 auto;
+  border:1px solid #e4e4e4;
+}
+.main-title {
+  background-color:#7d7d7d;
+  color:#fff;
+  padding:15px 14px;
+}
+.main-body {
+  overflow:hidden;
+}
+.item-box {
+  border-top:1px solid #e4e4e4;
+  overflow:hidden;
+}
+.item-box h2 {
+  border-right:1px solid #e4e4e4;
+  width:70px;
+  text-align:center;
+  line-height:72px;
+  float:left;
+  background-color:#d1d1d1;
+}
+.item-box-body {
+  overflow:hidden;
+  padding:6px 8px;
+}
+.info-box dl,
+.info-box dt,
+.info-box dd {
+  display:inline;
+}
+.info-box dt {
+  margin-right:10px;
+}
+.info-box dl {
+  margin-right:39px;
+}
+.data-box dt,
+.data-box dd{
+  display:inline;
+}

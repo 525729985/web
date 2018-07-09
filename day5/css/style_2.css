@@ -1,0 +1,46 @@
+body, h1, h2, h3, dl, dd, p { margin:0;padding:0;}
+body {
+  font-size:16px;
+  line-height:1.4;
+}
+h1 {
+  font-size:30px;
+}
+h2 {
+  font-size:24px;
+  margin:20px 0;
+}
+html,
+body,
+.main {
+  height:100%;
+}
+.main-title {
+  float:left;
+  width:194px;
+  height:100%;
+  background-color:#6d9ef5;
+  color:#fff;
+  text-align:center;
+}
+.main-title h1 {
+  padding-top:50px;
+}
+.main-body {
+  overflow:hidden;
+  padding-left:24px;
+}
+.info-box dl,
+.info-box dt,
+.info-box dd {
+  display:inline;
+}
+.info-box dt {
+  margin-right:10px;
+}
+.info-box dl {
+  margin-right:39px;
+}
+.data-box dt {
+  margin-top:20px;
+}
