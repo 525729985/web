@@ -8,9 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="css/style_3.css"/>
+  <link id="link" rel="stylesheet" type="text/css" href="css/style_3.css"/>
 </head>
 <body>
+<p style="position:fixed;right:100px;top:0;">
+  <button>style1</button>
+  <button>style2</button>
+  <button>style3</button>
+</p>
 <!-- main -->
 <div class="main">
   <div class="main-title"><h1>简历</h1></div>
@@ -89,5 +94,16 @@
   </div>
 </div>
 <!-- // main -->
+<script>
+  var link = document.getElementById('link');
+  var list = document.getElementsByTagName('button');
+  for(var i = 0; i < list.length; i++){
+    list[i].onclick = (function (index) {
+      return function(){
+        link.href = 'css/style_' + (index + 1) + '.css'
+      }
+    })(i)
+  }
+</script>
 </body>
 </html>
