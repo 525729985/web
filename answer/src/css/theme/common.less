@@ -1,0 +1,26 @@
+html, body, #root{ height:100%;}
+.wrap{ min-height:100%;}
+*{ box-sizing:border-box;}
+body{ color:@colorFont;background-color:@colorDivider;}
+#root{
+  font-size:@fontSize;margin:0 auto;max-width:750px;position:relative;overflow:visible;overflow-x:hidden;
+  .vux-no-group-title{ margin-top:0;}
+}
+.wrap{ background-color:@colorBg;}
+.container{ position:relative;margin:0 @contentMargin;}
+.text-primary,a.text-primary{ color:@colorPrimary !important;}
+.link{
+  transition:color .3s;
+  &.on, &:hover{ color:@colorPrimary !important;}
+}
+.img{
+  overflow:hidden;text-align:center;
+  img{ height:100%;}
+}
+.btns{ text-align:center;}
+.weui-cells{
+  &:after, &:before{ display:none;}
+}
+.weui-cell_access.vux-cell-box::after{
+  width:20px;height:20px;broder-width:1PX 1PX 0 0;right:@contentMargin;margin-top:-14.284px;
+}

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* common */
+body { margin:0; padding:0;font-family:"Microsoft YaHei",SimHei,"微软雅黑","黑体","宋体","Arial","Tahoma","Verdana"}
+div, form, input, select, ul, ol, li, p, h1, h2, h3, h4, h5, h6, p, dd, dt, dl { margin:0; padding:0; }
+ul, ol, li { list-style:none; }
+body, table, select, input { font-size:12px;  color:#5d5b5b; }
+img { border:none; vertical-align:top;outline:none;}
+a { color:#333; text-decoration:none;outline:none; }
+a:link{text-decoration:none; }
+a:hover { color:#F00; text-decoration:none; }
+h1 { font-size: 16px; }
+h2, h3 { font-size: 14px; font-weight:normal;}
+h4, h5, h6 { font-size: 12px;font-weight:normal; }
+.clear{ clear:both; float:none;}
+.fl{ float:left; display:inline;}
+.fr{ float:right;}
+.clearfix{ content:"."; clear:both; overflow:hidden;}
+.clearfix:after {content: ".";display: block;height: 0;font-size: 0;clear: both;visibility: hidden;}
+.clearfix {zoom: 1;}
+.p_t10{padding-top:10px}
+.border_no{border:0 !important}
+input,textarea{
+-webkit-appearance: none;
+border-radius: 0;
+}
+body{background-color:#eee;min-width:320px;}
+
+/* header */
+.header,.footer{z-index:999;width:100%;min-width:320px;}
+.header{border-top:5px solid #38b2e6;background-color:#fff;padding:35px 0;position:fixed;top:0;_position: absolute;_top:expression(documentElement.scrollTop);
+-webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s;
+-webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.5); -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.5); -o-box-shadow:0 0 5px rgba(0, 0, 0, 0.5); box-shadow:0 0 5px rgba(0, 0, 0, 0.5);}
+.fixed .header{padding:0}
+.nav{width:996px;margin:0 auto; }
+.nav h1{ width:120px; height:39px; background:url(../img/logo.jpg) 50% 50% no-repeat;  margin-top:20px;}
+
+.nav .btn_area{padding:14px 0 0 0;}
+.nav .btn_area .btn_en{margin:0 17px 0 31px;display:block;color: #666;text-align:center;border:1px solid #cdcdcd;font-size:14px; font-weight:800; padding:14px;}
+.nav .btn_area .btn_nav_lst{display:none}
+.nav .btn_area .ico_bar{background-color: #8d8f91;border-radius: 2px 2px 2px 2px;box-shadow: 0 0 0 0;display: block;height: 3px;width: 30px;margin-bottom: 5px;}
+.nav .nav_lst{background-color:#fff;padding:20px 0;overflow:hidden; }
+.nav .nav_lst li{float:left;height:39px;line-height:39px;}
+.nav .nav_lst li a{color:#7d7d7d;font-size:15px;padding:5px 10px;outline:none;}
+.nav .nav_lst li.select a,.nav .nav_lst li a:hover{color:#38b2e6;}
+.nav .nav_lst .l_nav{padding-left:13px;}
+.nav .nav_lst .l_nav li{padding-left:33px;}
+.nav .nav_lst .r_nav li{padding-left:8px;}
+body{ -webkit-transition: padding-top 0.2s; -moz-transition: padding-top 0.2s; -o-transition: padding-top 0.2s; transition: padding-top 0.2s;padding-top:153px;}
+body.fixed{padding-top:86px;}
+
+/* footer */
+.footer{background:#fffffe;padding:5% 0;}
+.footer .page-container{ margin:0 auto;}
+.footer .left-box{ float:left;width:32%;border-right:1px dashed #ebebe9;margin-right:3%;}
+.footer .left-box dt,.footer .left-box dd{ float:left;}
+.footer .left-box dt{ margin:0 15px;}
+.footer .left-box dd{ line-height:24px;}
+.footer .middle-box{ width:35%;margin:0 auto;line-height:24px;}
+.footer .right-box{ float:right;width:25%;}
+
+@media only screen and (max-width: 996px) {
+body,body.fixed{padding-top:57px;}
+.header,.fixed .header{padding:0}
+.nav{ width:100%; }
+
+.nav h1{ width:34px; height:34px;background:url(../img/logo2.jpg) 50% 50% no-repeat; margin-top:10px; padding-left:20px; background-size:34px 34px;}
+.nav .btn_area{padding:8px 0 10px 0; }
+.nav .btn_area .btn_en{ padding:9px 6px; line-height:10px;font-size:12px; text-align:center; margin-top:5px;}
+.nav .btn_area .btn_nav_lst{display:block;margin:10px 12px 0 0;display:block;}
+.nav .nav_lst,.nav .nav_lst .l_nav,.nav .nav_lst .r_nav,.nav .nav_lst li{float:none;clear:both;display:block}
+.nav .nav_lst{ display:none;padding:0;}
+.nav .nav_lst .l_nav{padding:0;border-top:1px solid #f1f1f1;}
+.nav .nav_lst li{padding:0 !important}
+.nav .nav_lst li a{display:block;padding:0 0 0 20px}
+.footer .left-box,.footer .middle-box,.footer .right-box{ min-width:320px;float:none;margin:0 auto}
+.footer .left-box{ border:none;}
+.footer .middle-box,.footer .right-box{ text-align:center;}
+.footer .right-box{margin:5% auto;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+.nav{max-width:995px;}
+.fixed .container{padding-top:0;}
+}
+
+@media only screen and (max-width: 767px)  {
+.nav{max-width:767px;}
+}

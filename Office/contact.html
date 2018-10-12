@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/common.css" type="text/css" rel="stylesheet" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<title>联系</title>
+<style>
+	
+
+.map{
+	width:100%;
+	height:669px;}
+	
+.overlay{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:99;
+	width:100%;
+	height:100%;
+	filter:Alpha(opacity=50);
+	opacity:0.5;
+	background:#000;}
+/*.lazy{
+	background:url(../img/title_decorate.png) center center no-repeat;}*/
+	
+.hr{
+	
+	height:1px;
+	}
+</style>
+
+</head>
+
+<body>
+<!-- 头部 -->
+<div class="header">
+	<div class="nav">
+    	<h1 class="fl"></h1>
+        <div class="btn_area fr">
+            <a href="#" class="btn_en fl">EN</a>
+            <a href="#" class="btn_nav_lst fl"><span class="ico_bar"></span><span class="ico_bar"></span><span class="ico_bar"></span></a>
+        </div>
+        <div class="nav_lst">
+            <ul class="l_nav fl">
+                <li><a href="case.html">业务范围</a></li>
+                <li><a href="project.html">项目案例</a></li>
+            </ul>
+            <ul class="r_nav fr">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="company.html">公司</a></li>
+                <li><a href="hr.html">招聘</a></li>
+                <li class="select"><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<!-- //头部 -->
+<div class="contact">
+	<div class="page-banner">
+		<img src="img/banner.jpg"/>
+	</div>
+	<!-- page-container -->
+	<div class="page-container">
+		<div class="main-box">
+			<div class="page-title">
+				<img src="img/title_decorate.png" class="decorate big"/>
+				<div class="big-title">联系</div>
+			</div>
+			<div class="adv-box clearfix">
+                    <div class="overlay"></div>
+   					<div id="map" class="map" ></div>
+			</div>
+			<div class="page-content">
+				<dl>
+				    <dd>地址：北京市海淀区海淀北二街8号 中关村SOHO A座519室</dd>
+				    <dd>总机：010-62418372</dd>
+				    <dd>传真：010-62418372-8001</dd>
+				    <dd>邮编：100080</dd>
+				    <dd>网址：http://www.clickharbour.com/</dd>
+				</dl>
+			</div>
+			<div class="page-title">
+				<img src="img/title_decorate.png" class="decorate small"/>
+				<div class="small-title">我要留言</div>
+			</div>
+			<div class="page-content">
+				<form action="#" method="post">
+					<div class="form-group">
+						<div class="form-control">
+							<input type="text" class="text"/>
+							<span class="tip require">*</span>
+							<span class="tip">您的姓名:</span>
+						</div>
+						<div class="form-control fr">
+							<input type="text" class="text"/>
+							<span class="tip require">*</span>
+							<span class="tip">电邮地址:</span>
+						</div>
+					</div>
+
+					<div class="form-control">
+						<input type="text" class="text"/>
+						<span class="tip">商业/公司名称:</span>
+					</div>
+
+					<div class="form-group">
+						<div class="form-control">
+							<input type="text" class="text"/>
+							<span class="tip require">*</span>
+							<span class="tip">国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家:</span>
+						</div>
+						<div class="form-control fr">
+							<input type="text" class="text"/>
+							<span class="tip">电话号码:</span>
+						</div>
+					</div>
+
+					<div class="form-control">
+						<input type="text" class="text"/>
+						<span class="tip">商业/公司名称:</span>
+					</div>
+
+					<div class="form-control">
+						<textarea class="text text2"></textarea>
+						<span class="tip require">*</span>
+						<span class="tip">评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;论:</span>
+					</div>
+					<button type="submit">提交</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- //page-container -->
+</div>
+<div class="toTop"></div>
+<!-- 尾部 -->
+<div class="footer">
+	<div class="page-container clearfix">
+		<div class="left-box clearfix">
+			<dl>
+				<dt>
+					<img width="77" height="85" src="img/logo3.png"/>
+				</dt>
+				<dd>
+					<p>中国 • 北京&nbsp;&nbsp;&nbsp;&nbsp;点击港湾科技</p>
+					<p>地址：北京市海滨区海滨北二街8号</p>
+					<p>中关村SOHO A座519室</p>
+					<p>联络电话：010-61418372</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="right-box">
+			<img src="img/code.jpg"/>
+		</div>
+		<div class="middle-box">
+			<div class="content">
+				<p>
+					<a href="article.html?position=map">网站地图</a> |
+					<a href="article.html?position=term">使用条款</a> |
+					<a href="article.html?position=secret">隐私声明</a>
+				</p>
+				<p>Copyright©2005-2014 CLICKHARBOUR.com 点击港湾</p>
+				<p>All Right Reserved</p>
+				<p><img src="img/cnzz.jpg"/></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //尾部 -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+		//清除提示
+		$(".form-control .text").val("");
+		$(".form-control .tip").on(CLICK,function(e){
+		    e.preventDefault();
+			$(this).siblings(".text").trigger("focus");
+		});
+		//显示提示
+		$(".form-control .text").focus(function(e){
+		    e.preventDefault();
+			$(this).nextAll(".tip").hide();
+		}).blur(function(){
+			if( $(this).val() == "")
+				$(this).nextAll(".tip").show();
+		});
+});
+</script>
+<!--mapbox end--> 
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=EAaf66456ab994c8872025bf92024ebd"></script> 
+<script>
+var map = new BMap.Map("map");
+var point = new BMap.Point(116.316631,39.989615);
+map.centerAndZoom(point,5);
+var  mapStyle = {style:"dark"};
+map.setMapStyle(mapStyle);
+map.addControl(new BMap.NavigationControl());
+var pt = new BMap.Point(116.316631,39.989615);
+var icon = new BMap.Icon("icon_map.png", new BMap.Size(15,15), {'anchor':new BMap.Size(0,20)});
+var marker = new BMap.Marker(pt,{icon:icon});
+map.addOverlay(marker);
+</script> 
+
+</body>
+</html>
