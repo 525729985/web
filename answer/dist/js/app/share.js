@@ -2,7 +2,7 @@ require(['js/vendor/toast.es6'], function(Toast){
 	function removeDisable(el){
 		$(el).parent().removeClass('disabled');
 	}
-  var url = encodeURIComponent(location.href);
+  var url = encodeURIComponent("http://www.baidu.com?id=1&name=test");
   var title = encodeURIComponent(document.title);
   $('.i-qzone').click(function(){
     var shareStr= 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + url + '&title=' + title + '&pics=' + $(this).data('pic')
