@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>答题王</title>
+	<!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>-->
+  <!--[if lt IE 9]>
+  <script src="js/html5-shim.js"></script>
+  <script src="js/es5-shim.min.js"></script>
+  <script src="js/es5-sham.min.js"></script>
+  <![endif]-->
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<!-- header -->
+<header>
+	<div class="container">
+		<nav class="info">
+			<span class="name">没有一人先生</span>
+			<a href="javascript:void(0);" class="oper login">登录</a>
+			<a href="javascript:void(0);" class="oper logout">退出</a>
+			<a href="javascript:void(0);" class="oper signin">注册</a>
+			<a href="user/user-info.html">个人中心</a>
+		</nav>
+		<div class="logo">
+			<img src="img/logo.png" alt="闯关王"/>
+		</div>
+	</div>
+</header>
+<!-- //header -->
+  <div class="main" id="lucky">
+    <div class="container">
+      <!-- lucky-box -->
+      <div id="lucky-box">
+        <div class="content">
+          <ul>
+            <!-- lucky-item -->
+            <li>
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+            <!-- lucky-item -->
+            <li>
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+            <!-- lucky-item -->
+            <li>
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+            <!-- lucky-item -->
+            <li>
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+            <li class="start"></li>
+            <!-- lucky-item -->
+            <li>
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+            <!-- lucky-item -->
+            <li>
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+            <!-- lucky-item -->
+            <li>
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+            <!-- lucky-item -->
+            <li class="on">
+              <div class="item-inner">
+                <!-- 90x60 -->
+                <div class="img"><img src="../../img/tem/phone.jpg"></div>
+                <div class="txt">苹果7plus</div>
+              </div>
+            </li>
+            <!-- //lucky-item -->
+          </ul>
+        </div>
+      </div>
+      <!-- //lucky-box -->
+      <div id="lucky-times">您有<span>3</span>次机会</div>
+      <div id="lucky-rules">
+        连续答对五题，每人每天可获得3次机会。抽奖成功可获得IPhone7 Plus，精美手镯，欧美时尚手表，戒指，100元话费充值卡，数码相机等精美礼品。抽奖成功可在个人中心-我的奖品里查看并领取。
+      </div>
+    </div>
+    <div class="btns">
+      <a href="#" class="btn btn-round">我的奖品</a>
+    </div>
+  </div>
+
+<script src="js/vendor.js"></script>
+<script>
+  require(['js/app/common']);
+
+
+    require(['js/vendor/modal.es6'], function(Modal){
+      // 点击抽奖
+      $('.start').click(function(){
+        Modal.confirm({
+          skin: 'my-modal-luck',
+          closeBtn: false,
+          shadeClose: true,
+          title: '中奖啦！',
+          content: '恭喜您，获得IPhone7 Plus一台。可在个人中心-我的奖品里查看并领取奖品！',
+          btns:[
+            {
+              cls: 'btn btn-primary btn-large',
+              txt: '立即查看',
+              onClick: function(){
+              }
+            }
+          ],
+        });
+      });
+    });
+  </script>
+</body>
+</html>
