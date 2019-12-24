@@ -86,11 +86,11 @@ to{-webkit-transform:translate3d(0,-3.6rem,0);transform:translate3d(0,-3.6rem,0)
 @keyframes gift-open-title{0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}
 75%{-webkit-transform:translate3d(0,-.72rem,0) scale(1);transform:translate3d(0,-.72rem,0) scale(1);opacity:.5}
 100%{-webkit-transform:translate3d(0,-.72rem,0) scale(0.95);transform:translate3d(0,-.72rem,0) scale(0.95);opacity:0}}
-@-webkit-keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1rem,0) scale(0.9);transform:translate3d(0,1rem,0) scale(0.9);opacity:.2}
+@-webkit-keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1rem,0) scale(0.9);transform:translate3d(0,1rem,0) scale(0.9);opacity:0}
 30%{opacity:1}
 70%{-webkit-transform:translate3d(0,-.2rem,0) scale(1.02);transform:translate3d(0,-.2rem,0) scale(1.02);opacity:1}
 to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}}
-@keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1rem,0) scale(0.9);transform:translate3d(0,1rem,0) scale(0.9);opacity:.2}
+@keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1rem,0) scale(0.9);transform:translate3d(0,1rem,0) scale(0.9);opacity:0}
 30%{opacity:1}
 70%{-webkit-transform:translate3d(0,-.2rem,0) scale(1.02);transform:translate3d(0,-.2rem,0) scale(1.02);opacity:1}
 to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}}
