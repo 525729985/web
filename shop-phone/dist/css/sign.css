@@ -86,17 +86,35 @@ to{-webkit-transform:translate3d(0,-3.6rem,0);transform:translate3d(0,-3.6rem,0)
 @keyframes gift-open-title{0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}
 75%{-webkit-transform:translate3d(0,-.72rem,0) scale(1);transform:translate3d(0,-.72rem,0) scale(1);opacity:.5}
 100%{-webkit-transform:translate3d(0,-.72rem,0) scale(0.95);transform:translate3d(0,-.72rem,0) scale(0.95);opacity:0}}
-@-webkit-keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1.44rem,0);transform:translate3d(0,1.44rem,0);opacity:0}
-25%{opacity:1}
-60%{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}
-75%{-webkit-transform:translate3d(0,0,0) scale(1.05);transform:translate3d(0,0,0) scale(1.05);opacity:1}
+@-webkit-keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1rem,0) scale(0.9);transform:translate3d(0,1rem,0) scale(0.9);opacity:.2}
+30%{opacity:1}
+70%{-webkit-transform:translate3d(0,-.2rem,0) scale(1.02);transform:translate3d(0,-.2rem,0) scale(1.02);opacity:1}
 to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}}
-@keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1.44rem,0);transform:translate3d(0,1.44rem,0);opacity:0}
-25%{opacity:1}
-60%{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}
-75%{-webkit-transform:translate3d(0,0,0) scale(1.05);transform:translate3d(0,0,0) scale(1.05);opacity:1}
+@keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1rem,0) scale(0.9);transform:translate3d(0,1rem,0) scale(0.9);opacity:.2}
+30%{opacity:1}
+70%{-webkit-transform:translate3d(0,-.2rem,0) scale(1.02);transform:translate3d(0,-.2rem,0) scale(1.02);opacity:1}
 to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}}
-.gift-box{padding-top:7.6rem}
+@-webkit-keyframes gift-box-btn-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}
+6.25%{-webkit-transform:scale(0.95);transform:scale(0.95);opacity:.2}
+to{-webkit-transform:scale(0.95);transform:scale(0.95);opacity:0}}
+@keyframes gift-box-btn-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}
+6.25%{-webkit-transform:scale(0.95);transform:scale(0.95);opacity:.2}
+to{-webkit-transform:scale(0.95);transform:scale(0.95);opacity:0}}
+@-webkit-keyframes gift-box-btn-show{0%{-webkit-transform:scale(1);transform:scale(1);opacity:0}
+6.25%{-webkit-transform:scale(1.05);transform:scale(1.05);opacity:.2}
+13.5%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:.4}
+18.75%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:.9}
+25%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:.95}
+31.25%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:1}
+to{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+@keyframes gift-box-btn-show{0%{-webkit-transform:scale(1);transform:scale(1);opacity:0}
+6.25%{-webkit-transform:scale(1.05);transform:scale(1.05);opacity:.2}
+13.5%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:.4}
+18.75%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:.9}
+25%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:.95}
+31.25%{-webkit-transform:scale(1.12);transform:scale(1.12);opacity:1}
+to{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+.gift-box{padding:7.6rem 0 1.4rem}
 .gift-box-content{margin:0 auto;width:12.8rem;position:relative}
 .gift-box-content:after{width:22.4rem;height:19.2rem;content:'';position:absolute;left:50%;bottom:2.16rem;-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0);background-repeat: no-repeat;}
 .gift-box .star{position:absolute;top:0;left:0;width:1.32rem;height:1.32rem;background-repeat: no-repeat;}
@@ -114,14 +132,18 @@ to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) sc
 .gift-box-coins:after{top:0;left:2rem}
 .gift-box-coins:before{top:-.12rem;right:2.2rem}
 .gift-box-title,.gift-box-info{text-align:center;position:absolute;left:0;bottom:100%;width:100%;z-index:20}
-.gift-box-info{color:#FFD96B;font-weight:700;font-size:28px;background:-webkit-radial-gradient(bottom,#FFE349,#FDC223);background:radial-gradient(360deg,#FFE349,#FDC223);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center;white-space:nowrap;line-height:1.2;opacity:0}
+.gift-box-info{color:#FFD96B;font-weight:700;font-size:30px;background:-webkit-radial-gradient(bottom,#FFE349,#FDC223);background:radial-gradient(360deg,#FFE349,#FDC223);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center;white-space:nowrap;line-height:1.2;opacity:0}
 .gift-box-title:after{content:'';display:inline-block;width:17rem;height:2.6rem;background-repeat: no-repeat;}
+.gift-box-btns{position:absolute;top:100%;left:0;width:100%;text-align:center}
+.gift-box-btns-open{z-index:5}
+.gift-box-btns-accept{z-index:1;opacity:0}
 .gift-box.open .gift-box-top{z-index:5;-webkit-animation:gift-open-top 1s;animation:gift-open-top 1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-coins{z-index:6;-webkit-animation:gift-open-coins ease-in 1s;animation:gift-open-coins ease-in 1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-coins:after{-webkit-animation:gift-open-coins-left ease-in 1s;animation:gift-open-coins-left ease-in 1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-coins:before{-webkit-animation:gift-open-coins-right ease-in 1s;animation:gift-open-coins-right ease-in 1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-title{-webkit-animation:gift-open-title ease-in .24s;animation:gift-open-title ease-in .24s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
-.gift-box.open .gift-box-info{-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-animation:gift-box-info .4s ease-in .24s;animation:gift-box-info .4s ease-in .24s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.gift-box.open .gift-box-info{-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-animation:gift-box-info .4s ease-in .24s;animation:gift-box-info .4s ease-in .24s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.gift-box.open .gift-box-btns-open{-webkit-animation:gift-box-btn-hide .3s;animation:gift-box-btn-hide .3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.gift-box.open .gift-box-btns-accept{-webkit-animation:gift-box-btn-show .3s;animation:gift-box-btn-show .3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .popup-sign{background:transparent;overflow:visible}
-.popup-sign .btns{margin-top:1.4rem;text-align:center}
 .btn-gift{color:#fff;text-decoration:none;display:inline-block;text-align:center;width:12.16rem;height:2.72rem;line-height:2.72rem;border-radius:1.68rem;background:-webkit-linear-gradient(top,#f33 0,#f63 100%);background:linear-gradient(180deg,#f33 0,#f63 100%);font-size:18px;font-weight:700}.gift-box-content:after{background-position:0rem 0rem}.gift-box .star{background-position:-21.08rem -19.6rem}.gift-box .star-y{background-position:-20.8rem -21.32rem}.gift-box-top{background-position:-9.6rem -24.16rem}.gift-box-btm{background-position:-9.6rem -30.56rem}.gift-box-coins{background-position:-9.6rem -39.68rem}.gift-box-coins:after,.gift-box-coins:before{background-position:-19.84rem -46.48rem}.gift-box-title:after{background-position:-5.4rem -49.44rem}.gift-box-content:after,.gift-box .star,.gift-box .star-y,.gift-box-top,.gift-box-btm,.gift-box-coins,.gift-box-coins:after,.gift-box-coins:before,.gift-box-title:after{background-size: 22.4rem 52.04rem;background-image: url(../img/sign_gift_1_z.png)}
