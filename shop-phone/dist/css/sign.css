@@ -88,12 +88,12 @@ to{-webkit-transform:translate3d(0,-3.6rem,0);transform:translate3d(0,-3.6rem,0)
 100%{-webkit-transform:translate3d(0,-.72rem,0) scale(0.95);transform:translate3d(0,-.72rem,0) scale(0.95);opacity:0}}
 @-webkit-keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1.44rem,0);transform:translate3d(0,1.44rem,0);opacity:0}
 25%{opacity:1}
-40%{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}
+60%{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}
 75%{-webkit-transform:translate3d(0,0,0) scale(1.05);transform:translate3d(0,0,0) scale(1.05);opacity:1}
 to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}}
 @keyframes gift-box-info{0%{-webkit-transform:translate3d(0,1.44rem,0);transform:translate3d(0,1.44rem,0);opacity:0}
 25%{opacity:1}
-40%{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}
+60%{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}
 75%{-webkit-transform:translate3d(0,0,0) scale(1.05);transform:translate3d(0,0,0) scale(1.05);opacity:1}
 to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) scale(1);opacity:1}}
 .gift-box{padding-top:7.6rem}
@@ -114,7 +114,7 @@ to{-webkit-transform:translate3d(0,0,0) scale(1);transform:translate3d(0,0,0) sc
 .gift-box-coins:after{top:0;left:2rem}
 .gift-box-coins:before{top:-.12rem;right:2.2rem}
 .gift-box-title,.gift-box-info{text-align:center;position:absolute;left:0;bottom:100%;width:100%;z-index:20}
-.gift-box-info{color:#FFD96B;font-weight:700;font-size:30px;background:-webkit-radial-gradient(bottom,#FFE349,#FDC223);background:radial-gradient(360deg,#FFE349,#FDC223);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center;white-space:nowrap;line-height:1.2;opacity:0}
+.gift-box-info{color:#FFD96B;font-weight:700;font-size:28px;background:-webkit-radial-gradient(bottom,#FFE349,#FDC223);background:radial-gradient(360deg,#FFE349,#FDC223);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center;white-space:nowrap;line-height:1.2;opacity:0}
 .gift-box-title:after{content:'';display:inline-block;width:17rem;height:2.6rem;background-repeat: no-repeat;}
 .gift-box.open .gift-box-top{z-index:5;-webkit-animation:gift-open-top 1s;animation:gift-open-top 1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-coins{z-index:6;-webkit-animation:gift-open-coins ease-in 1s;animation:gift-open-coins ease-in 1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
