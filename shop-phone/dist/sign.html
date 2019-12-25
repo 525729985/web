@@ -11,6 +11,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
   <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
   <link rel="stylesheet" type="text/css" href="css/sign.css"/>
   <script type="text/javascript">
@@ -26,13 +27,12 @@
   </style>
 </head>
 <body>
-<div class="mask" style="display: block;"></div>
+<!--<div class="mask" style="display: block;"></div>
 <div class="popup popup-sign" style="display: block; position: fixed;">
-  <!-- gift-box -->
+  &lt;!&ndash; gift-box &ndash;&gt;
   <div class="gift-box">
     <div class="gift-box-title"></div>
     <div class="gift-box-info">恭喜你50积分到手</div>
-    <!--<div class="gift-box-info"></div>-->
     <div class="gift-box-content">
       <div class="star star-y star-0"></div>
       <div class="star star-1"></div>
@@ -51,7 +51,75 @@
       <a href="javascript:;" class="btn btn-gift">联收下啦</a>
     </div>
   </div>
-  <!-- gift-box -->
+  &lt;!&ndash; gift-box &ndash;&gt;
+</div>-->
+<div class="sign-box" style="background-image: url(img/tem/img2.jpg)">
+  <div class="sign-box-msg">连签7天领礼包</div>
+  <!-- sign-box-info -->
+  <ul class="sign-box-info">
+    <li class="on">
+      <p class="small">12月</p>
+      <p class="day">16</p>
+      <p class="score">
+        <i class="icon i-coin"></i>1
+      </p>
+    </li>
+    <li>
+      <p class="small">12月</p>
+      <p class="day">16</p>
+      <p class="score">
+        <i class="icon i-coin"></i>1
+      </p>
+    </li>
+    <li>
+      <p class="small">12月</p>
+      <p class="day">16</p>
+      <p class="score">
+        <i class="icon i-coin"></i>1
+      </p>
+    </li>
+    <li>
+      <p class="small">12月</p>
+      <p class="day">16</p>
+      <p class="score">
+        <i class="icon i-coin"></i>1
+      </p>
+    </li>
+    <li>
+      <p class="small">12月</p>
+      <p class="day">16</p>
+      <p class="score">
+        <i class="icon i-coin"></i>1
+      </p>
+    </li>
+    <li>
+      <p class="small">12月</p>
+      <p class="day">16</p>
+      <p class="score">
+        <i class="icon i-coin"></i>1
+      </p>
+    </li>
+    <li class="gift">
+      <div class="gift-tag">礼包</div>
+      <div class="gift-icon">
+        <i class="icon i-gift"></i>
+      </div>
+    </li>
+  </ul>
+  <!-- // sign-box-info -->
+  <!-- sign-box-detail -->
+  <div class="sign-box-detail flex-box">
+    <div class="flex-box-content">
+      <p class="info">可用积分</p>
+      <p class="score">
+        <span class="number">12345678</span>
+        <span class="next"><i class="icon i-warn"></i>明细</span>
+      </p>
+      <p class="tips">可抵现金<span class="color-red">123456.78</span>元</p>
+    </div>
+    <a href="javascript:;" class="btn-gift">签到领积分</a>
+  </div>
+  <!-- // sign-box-detail -->
 </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">

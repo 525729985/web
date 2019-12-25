@@ -145,5 +145,32 @@ to{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
 .gift-box.open .gift-box-info{-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-animation:gift-box-info .4s ease-in .24s;animation:gift-box-info .4s ease-in .24s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-btns-open{-webkit-animation:gift-box-btn-hide .3s;animation:gift-box-btn-hide .3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-btns-accept{-webkit-animation:gift-box-btn-show .3s;animation:gift-box-btn-show .3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.btn-gift{color:#fff;text-decoration:none;display:inline-block;text-align:center;padding:0 1.2rem;height:2.72rem;line-height:2.72rem;border-radius:1.68rem;background:-webkit-linear-gradient(top,#f33 0,#f63 100%);background:linear-gradient(180deg,#f33 0,#f63 100%);font-size:16px;font-weight:400}
+.btn-gift:active{background:rgba(255,102,51,.6)}
+.icon{display:inline-block;vertical-align:middle}
+.flex-box{display:-webkit-box;display:-webkit-flex;display:flex}
+.flex-box-content{-webkit-box-flex:1;-webkit-flex:1;flex:1}
+.color-red{color:#F33}
 .popup-sign{background:transparent;overflow:visible}
-.btn-gift{color:#fff;text-decoration:none;display:inline-block;text-align:center;width:12.16rem;height:2.72rem;line-height:2.72rem;border-radius:1.68rem;background:-webkit-linear-gradient(top,#f33 0,#f63 100%);background:linear-gradient(180deg,#f33 0,#f63 100%);font-size:18px;font-weight:700}.gift-box-content:after{background-position:0rem 0rem}.gift-box .star{background-position:-21.08rem -19.6rem}.gift-box .star-y{background-position:-20.8rem -21.32rem}.gift-box-top{background-position:-9.6rem -24.16rem}.gift-box-btm{background-position:-9.6rem -30.56rem}.gift-box-coins{background-position:-9.6rem -39.68rem}.gift-box-coins:after,.gift-box-coins:before{background-position:-19.84rem -46.48rem}.gift-box-title:after{background-position:-5.4rem -49.44rem}.gift-box-content:after,.gift-box .star,.gift-box .star-y,.gift-box-top,.gift-box-btm,.gift-box-coins,.gift-box-coins:after,.gift-box-coins:before,.gift-box-title:after{background-size: 22.4rem 52.04rem;background-image: url(../img/sign_gift_1_z.png)}
+.popup-sign .btn-gift{min-width:12.16rem;font-size:18px;font-weight:700}
+.sign-box{position:relative;background-repeat:no-repeat;background-size:100% auto;padding:8.48rem .8rem 0}
+.sign-box-msg{position:absolute;top:3.04rem;left:1.6rem;font-size:30px;color:#fff;text-shadow:0 .08rem .32rem #3c7df0}
+.sign-box-info{display:-webkit-box;display:-webkit-flex;display:flex;margin-left:-.16rem}
+.sign-box-info li{-webkit-box-flex:1;-webkit-flex:1;flex:1;text-align:center;background:rgba(255,255,255,.8);border-radius:.16rem .16rem 0 0;margin-left:.16rem;box-sizing:border-box;padding-top:.8rem;height:5.2rem}
+.sign-box-info .on{background:#fff}
+.sign-box-info p{font-size:16px;font-weight:700;color:#535966;line-height:1;margin-bottom:.24rem}
+.sign-box-info .small{font-size:10px;font-weight:400;color:#9b9ea6}
+.sign-box-info .score{font-size:14px;font-weight:700;color:#FDC223}
+.sign-box-info .i-coin{width:1.28rem;height:1.28rem;margin-right:.16rem;position:relative;top:-.12rem;background-repeat: no-repeat;}
+.sign-box-info .i-gift{width:2.24rem;height:2.48rem;background-repeat: no-repeat;}
+.sign-box-info .gift{padding-top:0}
+.sign-box-info .gift-tag{display:inline-block;padding:0 .48rem;line-height:1.12rem;color:#fff;background:-webkit-linear-gradient(113deg,#f33 0,#f63 100%);background:linear-gradient(337deg,#f33 0,#f63 100%);box-shadow:0 .08rem .16rem 0 rgba(255,133,66,.55);border-radius:0 0 .16rem .16rem;vertical-align:top}
+.sign-box-info .gift-icon{margin-top:.48rem}
+.sign-box-detail{background:#fff;border-radius:0 0 .4rem .4rem;padding:1.2rem;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}
+.sign-box-detail p{line-height:1;margin-top:.4rem}
+.sign-box-detail .info{color:#bdc0c5;margin-top:0}
+.sign-box-detail .score{font-size:10px;color:#999}
+.sign-box-detail .number{color:#535966;font-size:28px;font-weight:700}
+.sign-box-detail .next{position:relative;top:-.24rem}
+.sign-box-detail .i-warn{width:1.12rem;height:1.16rem;margin-right:.16rem;position:relative;top:-.12rem;background-repeat: no-repeat;}
+.sign-box-detail .tips{color:#434343;font-size:12px;font-weight:400}.gift-box-content:after{background-position:0rem 0rem}.gift-box .star{background-position:-21.08rem -19.6rem}.gift-box .star-y{background-position:-20.8rem -21.32rem}.gift-box-top{background-position:-9.6rem -24.16rem}.gift-box-btm{background-position:-9.6rem -30.56rem}.gift-box-coins{background-position:-9.6rem -39.68rem}.gift-box-coins:after,.gift-box-coins:before{background-position:-19.84rem -46.48rem}.gift-box-title:after{background-position:-5.4rem -49.44rem}.gift-box-content:after,.gift-box .star,.gift-box .star-y,.gift-box-top,.gift-box-btm,.gift-box-coins,.gift-box-coins:after,.gift-box-coins:before,.gift-box-title:after{background-size: 22.4rem 52.04rem;background-image: url(../img/sign_gift_1_z.png)}.sign-box-info .i-coin{background-position:-0.96rem 0rem}.sign-box-info .i-gift{background-position:0rem -1.68rem}.sign-box-detail .i-warn{background-position:-1.12rem -4.56rem}.sign-box-info .i-coin,.sign-box-info .i-gift,.sign-box-detail .i-warn{background-size: 2.24rem 5.72rem;background-image: url(../img/sign_sign_1_z.png)}
