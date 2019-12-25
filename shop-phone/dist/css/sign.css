@@ -145,8 +145,8 @@ to{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
 .gift-box.open .gift-box-info{-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-animation:gift-box-info .4s ease-in .24s;animation:gift-box-info .4s ease-in .24s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-btns-open{-webkit-animation:gift-box-btn-hide .3s;animation:gift-box-btn-hide .3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 .gift-box.open .gift-box-btns-accept{-webkit-animation:gift-box-btn-show .3s;animation:gift-box-btn-show .3s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
-.btn-gift{color:#fff;text-decoration:none;display:inline-block;text-align:center;padding:0 1.2rem;height:2.72rem;line-height:2.72rem;border-radius:1.68rem;background:-webkit-linear-gradient(top,#f33 0,#f63 100%);background:linear-gradient(180deg,#f33 0,#f63 100%);font-size:16px;font-weight:400}
-.btn-gift:active{background:rgba(255,102,51,.6)}
+.btn-gift{color:#fff;text-decoration:none;display:inline-block;text-align:center;padding:0 1.2rem;height:2.72rem;line-height:2.72rem;border-radius:1.68rem;font-size:16px;font-weight:400;outline:0;border:0;background-image:none;background:-webkit-linear-gradient(top,#f33 0,#f63 100%);background:linear-gradient(180deg,#f33 0,#f63 100%)}
+.btn-gift:active{opacity:.8;box-shadow:0 3PX 5PX rgba(0,0,0,.125) inset}
 .icon{display:inline-block;vertical-align:middle}
 .flex-box{display:-webkit-box;display:-webkit-flex;display:flex}
 .flex-box-content{-webkit-box-flex:1;-webkit-flex:1;flex:1}
