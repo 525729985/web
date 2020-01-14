@@ -122,7 +122,10 @@ body{position:relative;height:auto}
 .price .old-price{font-size:1rem;color:#999;text-decoration:line-through}
 .vip-price{color:#333;font-weight:700;font-size:1rem}
 .vip-price:after{display:inline-block;width:13px;height:13px;content:'';margin-left:2px;border-top-left-radius:.3rem;border-bottom-right-radius:.3rem;background:#54435C url(/resource/img/m/usercenter/vip-crown.png) no-repeat 1px 2px;background-size:11px 9px;vertical-align:-1px}
-
+@media (prefers-color-scheme:dark){html,body,.body-f6,.mod-cart-nav{background:#000;color:rgba(235,235,245,.8)}
+.mod-dialog .dialog-main,.base_fm{background:#1c1c1e}
+.mod-dialog .confirm-content,.vip-price,a,.order_type_wrap .order_type{color:rgba(235,235,245,.8)}
+.base_fm .fm-item{border-color:rgba(84,84,88,.6)}}
 .loadingmid{width:100%;height:5rem;margin:0 auto;margin-top:25rem;position:fixed;top:0;bottom:0;left:0;right:0;z-index:10000;text-align:center;display:none}
 .loadingmid span{display:inline-block;width:.4rem;height:1.6rem;border-radius:4px;background:#90ee90;animation:load 1s ease infinite}
 @-webkit-keyframes load{0%,100%{height:1.6rem;background:#90ee90}
@@ -130,7 +133,4 @@ body{position:relative;height:auto}
 .loadingmid span:nth-child(2){animation-delay:.2s}
 .loadingmid span:nth-child(3){animation-delay:.4s}
 .loadingmid span:nth-child(4){animation-delay:.6s}
-.loadingmid span:nth-child(5){animation-delay:.8s}@media  (prefers-color-scheme:dark){html,body,.body-f6,.mod-cart-nav{background:#000;color:rgba(235,235,245,.8)}
-.mod-dialog .dialog-main,.base_fm{background:#1c1c1e}
-.mod-dialog .confirm-content,.vip-price,a,.order_type_wrap .order_type{color:rgba(235,235,245,.8)}
-.base_fm .fm-item{border-color:rgba(84,84,88,.6)}}
+.loadingmid span:nth-child(5){animation-delay:.8s}
