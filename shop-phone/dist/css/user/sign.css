@@ -232,9 +232,9 @@ to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}
 .couponpop-list ul{width:96%;overflow:auto;margin:0 auto;height:18rem;padding-bottom:1rem}
 .couponpop-list li{display:-webkit-box;display:-webkit-flex;display:flex;height:4.16rem;background:url(https://p4.ssl.qhimg.com/t018b421cbff87e6a85.png) no-repeat 0 0;background-size:100% 100%}
 .couponpop-list li strong{width:6.6rem;line-height:4.24rem;font-size:1.4rem;font-weight:700;color:#ef729b;background:-webkit-linear-gradient(top,#ff9650 0,#ea3f11 100%);background:linear-gradient(180deg,#ff9650 0,#ea3f11 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center}
-.couponpop-list li p{-webkit-box-flex:1;-webkit-flex:1;flex:1;font-size:.96rem;padding-top:.8rem;padding-left:.6rem}
-.couponpop-list li p b{display:block;overflow:hidden;height:1.44rem;font-weight:400}
-.couponpop-list li p span{display:block;overflow:hidden;height:1.2rem;font-size:.8rem;color:#999}
+.couponpop-list li p{-webkit-box-flex:1;-webkit-flex:1;flex:1;font-size:.96rem;padding-top:.96rem;padding-left:.6rem;line-height:1.12rem}
+.couponpop-list li p b{display:block;overflow:hidden;font-weight:400}
+.couponpop-list li p span{display:block;overflow:hidden;font-size:.8rem;color:#999;margin-top:.16rem}
 .couponpop-btn .btn{display:block;width:96%;margin:0 auto;height:2.72rem;line-height:2.72rem;background:#FFCA00;border-radius:1.68rem;font-weight:700;font-size:18px;text-align:center;color:#fff}
 .couponpop-foot{font-size:12px;position:relative;color:#fff;text-align:center;margin-top:.8rem}
 .couponpop-foot a{color:#fff;text-decoration:underline}
