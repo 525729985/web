@@ -24,13 +24,12 @@
       setTimeout(function(){
         init();
       },300)
-      $(document).off('click.popup').on('click.popup', '.test', function(){
-        alert(2);
-      });
     }
     $('.show').click(function(){
-      console.log(2);
       init();
+      $(document).off('click.popup').on('click.popup', '.test', function(){
+        alert(3);
+      });
     });
   </script>
 </body>
