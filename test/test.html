@@ -51,20 +51,20 @@
 <body>
 <button class="show">show</button>
 <div class="popup"></div>
-<div class="mask"></div>
 	<script type="text/javascript" src="js/zepto.min.js"></script>
   <script type="text/javascript">
     var init = function(){
       $('.popup').add('.mask').show();
-      $('.popup').html('<div class="popup-close js-popup-close">test2</div>');
-      setTimeout(function(){
+      $('.popup').html('<div class="popup-close js-popup-close">test3</div>');
+      /*setTimeout(function(){
         init();
-      },300)
+      },300)*/
     }
     $('.show').click(function(){
       init();
       $(document).off('click.popupClose').on('click.popupClose', '.js-popup-close', function(){
         alert(3);
+        return false;
       });
     });
   </script>
