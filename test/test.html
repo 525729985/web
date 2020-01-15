@@ -13,14 +13,41 @@
 	<meta name="format-detection" content="telephone=no" />
 	<!--<link rel="shortcut icon" href="/favicon.ico"/>-->
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <style type="text/css">
+    .popup{
+      background: transparent;
+      overflow: visible;
+      position: fixed !important;
+      top: 50% !important;
+      margin-top: 0 !important;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .mask {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color:
+        #000;
+      opacity: 0.5;
+      -ms-filter: 'alpha(opacity=50)';
+      z-index: 100;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 <button class="show">show</button>
-<div id="app"></div>
+<div class="popup"></div>
+<div class="mask"></div>
 	<script type="text/javascript" src="js/zepto.min.js"></script>
   <script type="text/javascript">
     var init = function(){
-      $('#app').html('<button class="js-popup-close">test</button>');
+      $('.popup').add('.mask').show();
+      $('.popup').html('<button class="js-popup-close">test</button>');
       setTimeout(function(){
         init();
       },300)
