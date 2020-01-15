@@ -21,6 +21,9 @@
   <script type="text/javascript">
     var init = function(){
       $('#app').html('<button class="test">test</button>');
+      setTimeout(function(){
+        init();
+      },300)
       $(document).off('click.popup').on('click.popup', '.test', function(){
         alert(1);
       });
