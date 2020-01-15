@@ -19,12 +19,15 @@
 <div id="app"></div>
 	<script type="text/javascript" src="js/zepto.min.js"></script>
   <script type="text/javascript">
-    $(document).off('click.popup').on('click.popup', '.show', function(){
-      alert(1);
-    });
     var init = function(){
-      $('#app').html('<button class="btn">test</button>');
+      $('#app').html('<button class="test">test</button>');
+      $(document).off('click.popup').on('click.popup', '.test', function(){
+        alert(1);
+      });
     }
+    $('.show').click('click', function(){
+      init();
+    });
   </script>
 </body>
 </html>
