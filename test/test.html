@@ -62,7 +62,7 @@
     }
     $('.show').click(function(){
       init();
-      $(document).off('click.popupClose').on('click.popupClose', '.js-popup-close', function(){
+      $('body').on('click', '.js-popup-close', function(){
         alert(3);
         return false;
       });
