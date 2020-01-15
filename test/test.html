@@ -20,14 +20,14 @@
 	<script type="text/javascript" src="js/zepto.min.js"></script>
   <script type="text/javascript">
     var init = function(){
-      $('#app').html('<button class="test">test</button>');
+      $('#app').html('<button class="js-popup-close">test</button>');
       setTimeout(function(){
         init();
       },300)
     }
     $('.show').click(function(){
       init();
-      $(document).off('click.popup').on('click.popup', '.test', function(){
+      $(document).off('click.popupClose').on('click.popupClose', '.js-popup-close', function(){
         alert(3);
       });
     });
