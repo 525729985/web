@@ -15,12 +15,16 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-  <button class="btn">test</button>
+<button class="show">show</button>
+<div id="app"></div>
 	<script type="text/javascript" src="js/zepto.min.js"></script>
   <script type="text/javascript">
-    $('.btn').click(function(){
+    $(document).off('click.popup').on('click.popup', '.show', function(){
       alert(1);
     });
+    var init = function(){
+      $('#app').html('<button class="btn">test</button>');
+    }
   </script>
 </body>
 </html>
